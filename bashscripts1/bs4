@@ -1,0 +1,4 @@
+#!/bin/bash
+# Command substitution
+mydir=$(pwd)
+echo $mydir

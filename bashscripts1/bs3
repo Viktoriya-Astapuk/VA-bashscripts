@@ -1,0 +1,5 @@
+#!/bin/bash
+# testing variables
+work="iTechArt"
+person="Viktoryia"
+echo "$person is a good girl, she works at $work"
