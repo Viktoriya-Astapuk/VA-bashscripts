@@ -1,10 +1,10 @@
 #!/bin/bash
-MY_DIRECTORIES="/home /var/log"
+MY_DIRECTORIES="$USERPROFILE/Documents /c/users"
 echo "Top Ten Disk Space Usage"
 for DIR in $MY_DIRECTORIES
 do
 echo "The $DIR Directory:"
-du -S $DIR 2>/dev/null |
+du -S $DIR 2>errors_bs5.txt |
 sort -rn |
 sed '{11,$D; =}' |
 sed 'N; s/\n/ /' |
